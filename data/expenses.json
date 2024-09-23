@@ -1,0 +1,11 @@
+[ {
+  "id" : 1,
+  "description" : "Dinner",
+  "amount" : 35.0,
+  "date" : "2024-09-24"
+}, {
+  "id" : 2,
+  "description" : "Supper",
+  "amount" : 33.33,
+  "date" : "2024-09-24"
+} ]

@@ -2,15 +2,24 @@ package uz.akbar;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 /**
  * Expense
  */
 public class Expense {
 
 	private int id;
+
 	private String description;
+
 	private double amount;
+
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
 	private LocalDate date;
+
+	public Expense() {
+	}
 
 	public Expense(int id, String description, double amount, LocalDate date) {
 		this.id = id;
@@ -60,6 +69,6 @@ public class Expense {
 
 	@Override
 	public String toString() {
-		return String.format("ID: %d, Description: %s, Amount: $%.2f, Date: %s, ", id, description, amount, date);
+		return String.format("ID: %d, Description: %s, Amount: $%.2f, Date: %s", id, description, amount, date);
 	}
 }
