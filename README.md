@@ -29,25 +29,25 @@ This will create a JAR file in the `target` directory.
 java -jar target/expense-tracker-cli-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 ## Usage
-# Add Expense
+### Add Expense
 ```bash
 $ expense-tracker add --description "Lunch" --amount 20
 ```
 `Expense added successfully (ID: 1)`
 
-# Update Expense
+### Update Expense
 ```bash
 $ expense-tracker update --id 1 --description "Dinner" --amount 25
 ```
 `Expense updated successfully (ID: 1)`
 
-# Delete Expense
+### Delete Expense
 ```bash
 $ expense-tracker delete --id 1
 ```
 `Expense deleted successfully`
 
-# View All Expenses
+### View All Expenses
 ```bash
 $ expense-tracker list
 ```
@@ -56,19 +56,19 @@ $ expense-tracker list
 | 1 | 2024-08-06 | Lunch | $20 |
 | 2 | 2024-08-06 | Dinner | $10 |
 
-# Total Expense Summary for All
+### Total Expense Summary for All
 ```bash
 $ expense-tracker summary
 ```
 `Total expenses: $30`
 
-# Total Expense Summary for Month
+### Total Expense Summary for Month
 ```bash
 $ expense-tracker summary --month 8
 ```
 `Total expenses for August: $20`
 
-# Export Data to CSV File
+### Export Data to CSV File
 ```bash
 $ expense-tracker export
 ```
